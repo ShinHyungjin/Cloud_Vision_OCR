@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Input_Activity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="정보 기입"
+            android:textSize="65dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="88dp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="공복혈당(mg/dL)"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:ems="8"
+            android:inputType="textPersonName"
+            android:hint="공복혈당 mg/dL"
+            android:textSize="17sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="식후혈당(mg/dL)"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:ems="8"
+            android:inputType="textPersonName"
+            android:hint="식후혈당 mg/dL"
+            android:textSize="17sp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="표준무게(Kg)"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:ems="8"
+            android:inputType="textPersonName"
+            android:hint="키(M) 소수점 1자리"
+            android:textSize="17sp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="성별(Gender)"
+            android:textSize="17sp"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="여자(Female)"
+                android:textSize="12sp"
+                />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="남자(male)"
+                android:textSize="12sp"
+                />
+        </RadioGroup>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:background="@drawable/button_style"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="24dp"
+            android:layout_marginLeft="80dp"
+            android:textStyle="bold"
+            android:text="뒤로가기" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:background="@drawable/button_style"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="24dp"
+            android:layout_marginLeft="22dp"
+            android:textStyle="bold"
+            android:text="확인완료" />
+    </TableRow>
+</LinearLayout>
